@@ -1,6 +1,8 @@
 # JetstarGamingInternship
 A dummy website made for internship assessment.
 
+Live at <https://dev-jetstar-assignment.deno.dev/>
+
 Create and deploy a simple form for making payments for rental orders. The form is divided into 3 sections which are as follows. 
 (*) Order summary section ( Product name, price , order ID, date)
 
