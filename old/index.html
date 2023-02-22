@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh Parapalli | Jetstar Gaming Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="logo"><img src="https://via.placeholder.com/100" alt="Logo" /></div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="content" class="content">
+        <div class="container">
+            <!-- Order Details -->
+            <div class="order-details">
+                <div class="order-details-header">
+                    <h2>Order Summary</h2>
+                </div>
+                <div class="details-container">
+                    <div class="order-details-body-left">
+                        <h3>Product Name</h3>
+                        <h3>Price</h3>
+                        <h3>Order ID </h3>
+                        <h3>Order Date</h3>
+                    </div>
+                    <div class="order-details-body-right">
+                        <h3>Dummy Product</h3>
+                        <h3>₹100.00</h3>
+                        <h3>1762938647</h3>
+                        <h3>23/02/2023</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="button-container">
+        <button class="previous-btn" id="previous-btn">Previous</button>
+        <button class="next-btn" id="next-btn">Next</button>
+    </div>
+    <!-- Templates for Next and prev pages. -->
+    <template id="customer-details">
+        <div class="container">
+            <div class="order-details-header">
+                <h2>Customer Details</h2>
+            </div>
+            <form id="cust-details-form" class="">
+                <div class="text-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"/>
+                </div>
+                <div class="text-input">
+                    <label for="number">Phone (10-digits)</label>
+                    <input type="tel" id="number" name="number"/>
+                </div>
+                <div class="text-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"/>
+                </div>
+                <div class="text-input">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address"/>
+                </div>
+            </form>
+        </div>
+    </template>
+    <template id="payment-details">
+        <div class="container">
+            <div class="order-details-header">
+                <h2>Payment Details</h2>
+            </div>
+            <form id="payment-form" class="">
+                Which method of payment ?
+                <div class="radio-input">
+                    <input type="radio" id="debit-card" name="payment-method" value="debit-card">
+                    <label for="debit-card">Debit Card</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" id="upi" name="payment-method" value="upi">
+                    <label for="upi">UPI</label>
+                </div>
+                <div class="radio-input">
+                    <input type="radio" id="cash-on-delivery" name="payment-method" value="cash-on-delivery">
+                    <label for="cash-on-delivery">Cash on Delivery</label>
+                </div>
+            </form>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
